@@ -8,5 +8,6 @@ Restart=always
 User=root
 ExecStart= python3 /opt/pifan/pifan.py
 ExecStop=kill $(ps aux | grep -m 1 'python3 /opt/pifan/pifan.py' | awk '{ print $2 }')
+SuccessExitStatus=1
 [Install]
 WantedBy=multi-user.target
