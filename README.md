@@ -19,6 +19,11 @@ sudo ln -sv /opt/pifan.service /etc/systemd/system
 sudo systemctl enable pifan.service
 sudo systemctl start pifan.service
 ```
+## Updating
+After updating, you have to reload systemd services specifications, in case it changed:
+```
+systemctl daemon-reload
+```
 ## Un-installing
 ```
 sudo systemctl disable pifan.service
