@@ -30,3 +30,9 @@ sudo systemctl disable pifan.service
 sudo rm -v /etc/systemd/system/pifan.service
 sudo rm -rv /opt/pifan
 ```
+
+## Docker
+To run this script as docker container run the following commands:
+```
+docker build -t pifan . && docker run -d --device /dev/gpiomem --restart unless-stopped --name="pifan" pifan
+```
