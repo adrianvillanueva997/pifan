@@ -1,5 +1,5 @@
 # Raspberry Pi PWM fan control
-This script can control a fan connected to a Raspi's GPIO as a system service using systemd.
+his script can control a fan connected to a Raspi's GPIO as a system service using systemd. By default it uses GPIO14 (pin 8)
 
 ## Installing
 The repo is to be either cloned or symlinked at ``` /opt ``` since the service definition states that is the route to the script. So execute either of these commands:
